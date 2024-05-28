@@ -1,0 +1,659 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 500px;
+}
+
+.div-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.div-card-grass {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #9DD091;
+}
+
+.div-card-fire {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #F29091;
+}
+
+.div-card-water {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #91BFF7;
+}
+
+.div-card-bug {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #C8D088;
+}
+
+.div-card-normal {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #CFCFCF;
+}
+
+.div-card-poison {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #C89EE5;
+}
+
+.div-card-electric {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #FCDF7F;
+}
+
+.div-card-ground {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #C8A78C;
+}
+
+.div-card-fairy {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #F6B7F7;
+}
+
+.div-card-fighting {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #FFBF7F;
+}
+
+.div-card-psychic {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #F69EBC;
+}
+
+.div-card-dragon {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background-color: #A6AFF0;
+}
+
+.div-card-grasspoison {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #9DD091;
+  background: linear-gradient(90deg, #9DD091 20%, #C89EE5 80%);
+}
+
+.div-card-fireflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #F29091;
+  background: linear-gradient(90deg, #F29091 20%, #C0DCF7 80%);
+}
+
+.div-card-bugflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #C8D088;
+  background: linear-gradient(90deg, #C8D088 20%, #C0DCF7 80%);
+}
+
+.div-card-bugpoison {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #C8D088;
+  background: linear-gradient(90deg, #C8D088 20%, #C89EE5 70%);
+}
+
+.div-card-normalflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #CFCFCF;
+  background: linear-gradient(90deg, #CFCFCF 20%, #C0DCF7 70%);
+}
+
+.div-card-poisonground {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #C89EE5;
+  background: linear-gradient(90deg, #C89EE5 20%, #C8A78C 70%);
+}
+
+.div-card-normalfairy {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #CFCFCF;
+  background: linear-gradient(90deg, #CFCFCF 20%, 	#F6B7F7 70%);
+}
+
+.div-card-poisonflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #C89EE5;
+  background: linear-gradient(90deg, #C89EE5 20%, 	#C0DCF7 70%);
+}
+
+.div-card-buggrass {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #C8D088;
+  background: linear-gradient(90deg, #C8D088 30%, #9DD091 80%);
+}
+
+.div-card-waterfighting {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #91BFF7;
+  background: linear-gradient(90deg, #91BFF7 20%, #C0DCF7 80%);
+}
+
+.div-card-waterpoison {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #91BFF7;
+  background: linear-gradient(90deg, #91BFF7 20%, #C89EE5 80%);
+}
+
+.div-card-rockground {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #D7D4C0;
+  background: linear-gradient(90deg, #D7D4C0 20%, #C8A78C 80%);
+}
+
+.div-card-waterpsychic {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #91BFF7;
+  background: linear-gradient(90deg, #91BFF7 20%, #F69EBC 80%);
+}
+
+.div-card-electricsteel {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #FCDF7F;
+  background: linear-gradient(90deg, #FCDF7F 20%, #AFD0DB 80%);
+}
+
+.div-card-waterice {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #91BFF7;
+  background: linear-gradient(90deg, #91BFF7 20%, #9DEBFF 80%);
+}
+
+.div-card-ghostpoison {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #B79EB7;
+  background: linear-gradient(90deg, #B79EB7 20%, #C89EE5 80%);
+}
+
+.div-card-grasspsychic {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #9DD091;
+  background: linear-gradient(90deg, #9DD091 20%, #F69EBC 80%);
+}
+
+.div-card-groundrock {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #C8A78C;
+  background: linear-gradient(90deg, #C8A78C 20%, #D7D4C0 80%);
+}
+
+.div-card-psychicfairy {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #F69EBC;
+  background: linear-gradient(90deg, #F69EBC 20%, #F6B7F7 80%);
+}
+
+.div-card-icepsychic {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #9DEBFF;
+  background: linear-gradient(90deg, #9DEBFF 20%, #F69EBC 80%);
+}
+
+.div-card-waterflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #91BFF7;
+  background: linear-gradient(90deg, #91BFF7 20%, #C0DCF7 80%);
+}
+
+.div-card-rockwater {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #F69EBC;
+  background: linear-gradient(90deg, #F69EBC 20%, #F6B7F7 80%);
+}
+
+.div-card-rockflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #D7D4C0;
+  background: linear-gradient(90deg, #D7D4C0 20%, #91BFF7 80%);
+}
+
+.div-card-iceflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #9DEBFF;
+  background: linear-gradient(90deg, #9DEBFF 20%, #C0DCF7 80%);
+}
+
+.div-card-electricflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #FCDF7F;
+  background: linear-gradient(90deg, #FCDF7F 20%, #C0DCF7 80%);
+}
+
+.div-card-dragonflying {
+  height: 40vh;
+  width: 20vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 2rem;
+  border: solid 3px gray;
+  border-radius: 75px;
+  margin: 20px;
+  gap: 1vh;
+  background: #A6AFF0;
+  background: linear-gradient(90deg, #A6AFF0 20%, #C0DCF7 80%);
+}
+
+.div-name {
+  height: 8.5%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.div-img {
+  height: 25.5%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.pokemon-img {
+  width: 60%;
+}
+
+.div-type {
+  height: 8.5%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+
+}
+
+.div-stats {
+  display: grid;
+  height: 34%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 5px;
+  font-size: 0.8rem;
+}
+
+.div-stats2-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.div-stats2-2 {
+  grid-area: 1 / 2 / 2 / 3; 
+}
+
+.div-stats2-3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.div-stats2-4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.div-stats2-5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.div-stats2-6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.pokemon-num {
+  margin-bottom: 0;
+}
+
+.pokemon-string {
+  margin-top: 0;
+}
+
+.div-id {
+  height: 4,25%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+
+}
